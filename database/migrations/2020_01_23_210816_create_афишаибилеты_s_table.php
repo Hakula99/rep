@@ -17,6 +17,7 @@ class CreateафишаибилетыSTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('description');
+            $table->string('img')->nullable();
             $table->string('date');
             $table->integer('price')->default(0);
             $table->timestamps();
